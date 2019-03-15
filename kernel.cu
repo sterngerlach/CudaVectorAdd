@@ -164,7 +164,7 @@ Cleanup:
                       << ::cudaGetErrorString(cudaErr) << '\n';
     }
 
-    /* ベクトル用のメモリ領域を確保 */
+    /* ベクトル用のメモリ領域を解放 */
     if (hostVecA != nullptr)
         delete[] hostVecA;
 
